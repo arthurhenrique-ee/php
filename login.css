@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --destaque: #2148C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #242527;
+    color: #fff;
+}
+
+form.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.login-form .logo {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-form .logo span {
+    font-weight: 700;
+}
+
+.login-form .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.login-form .field input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-form .field input::placeholder {
+    color: #ccc;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #0000003d;
+    background-color: #fff;
+    color: #242527;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.login-form input[type="submit"]:active {
+    box-shadow: none;
+}
+
+.login-form .register {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-form .register a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-form .register a:hover {
+    text-decoration: none;
+}
