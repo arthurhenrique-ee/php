@@ -19,7 +19,7 @@
             </div>
 
             <div class="info">
-                <span class="name">Arthur Henrique</span>
+                <span class="name">Arthur Gunes</span>
                 <span class="user">arthurhenriquee</span>
             </div>
 
