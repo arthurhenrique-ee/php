@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+section {
+    display: none;
+    padding: 60px 0;
+    transition: .5s;
+}
+
+section.active {
+    display: block;
+}
+
+section .top-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section .top-section h2 {
+    margin-bottom: 5px;
+    font-weight: 800;
+    color: #6E63FD;
+}
+
+section .top-section h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3A3B3D;
+}
+
+/* NOVO ANÚNCIO */
+.novo-anuncio form {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+}
+
+.novo-anuncio form .upload-image {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px dashed #6E63FD;
+    color: #3A3B3D;
+    text-align: center;
+}
+
+.novo-anuncio form .upload-image .icon {
+    font-size: 3em;
+}
+
+.novo-anuncio form .upload-image .text-info {
+    margin: 10px 0 30px 0;
+}
+
+.novo-anuncio form .upload-image label {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #6E63FD;
+    color: #fff;
+}
+
+.novo-anuncio form .ad-details {
+    width: 100%;
+}
+
+.novo-anuncio form .ad-details .field {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    cursor: text;
+    border-bottom: 1px solid #707175;
+}
+
+.novo-anuncio form .ad-details label {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    cursor: text;
+    font-size: 15px;
+    color: #3A3B3D;
+    transition: .3s;
+}
+
+.novo-anuncio form .ad-details input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.novo-anuncio form .ad-details input:focus ~ label,
+.novo-anuncio form .ad-details input:valid ~ label {
+    transform: translateY(-17px);
+    font-size: 12px;
+}
+
+.novo-anuncio form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #70717567;
+    color: #fff;
+}
