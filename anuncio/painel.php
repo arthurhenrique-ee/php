@@ -60,7 +60,7 @@
     </div>
 
     <main>
-        <section class="novo-anuncio active" data-section="novo-anuncio">
+        <section class="novo-anuncio">
             <div class="interface">
 
                 <div class="top-section">
@@ -69,17 +69,21 @@
                 </div>
 
                 <form action="" method="post" class="form-novo-anuncio">
-                    <div class="upload-image">
-                        <div class="icon">
-                            <i class="bi bi-upload"></i>
+                    <div class="upload-image loaded">
+                        <div class="placeholder">
+                            <div class="icon">
+                                <i class="bi bi-upload"></i>
+                            </div>
+                            <div class="text-info">
+                                Selecione um arquivo ou solte-o aqui
+                            </div>
+                            <div class="field">
+                                <input type="file" name="ad-image" id="ad-image" hidden>
+                                <label for="ad-image" class="btn-select-file">Selecione um arquivo</label>
+                            </div>
                         </div>
-                        <div class="text-info">
-                            Selecione um arquivo ou solte-o aqui
-                        </div>
-                        <div class="field">
-                            <input type="file" name="ad-image" id="ad-image" hidden>
-                            <label for="ad-image" class="btn-select-file">Selecione um arquivo</label>
-                        </div>
+
+                        <img src="assets/img/anuncio-teste.jpg" alt="Preview de imagem" class="preview">
                     </div>
 
                     <div class="ad-details">
@@ -102,6 +106,7 @@
     </main>
 
     <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/upload-image.js"></script>
 </body>
 
 </html>

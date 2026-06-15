@@ -8,13 +8,8 @@
 }
 
 section {
-    display: none;
     padding: 60px 0;
     transition: .5s;
-}
-
-section.active {
-    display: block;
 }
 
 section .top-section {
@@ -44,6 +39,7 @@ section .top-section h3 {
 
 .novo-anuncio form .upload-image {
     width: 100%;
+    height: 300px;
     padding: 30px;
     border-radius: 10px;
     border: 2px dashed #6E63FD;
@@ -51,7 +47,49 @@ section .top-section h3 {
     text-align: center;
 }
 
+.novo-anuncio form .upload-image.loaded {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.novo-anuncio form .upload-image.loaded::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: #3b368a;
+    opacity: 0;
+    transition: .3s;
+}
+
+.novo-anuncio form .upload-image.loaded:hover::after {
+    opacity: 0.5;
+}
+
+.novo-anuncio form .upload-image.loaded .placeholder {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+
+.novo-anuncio form .upload-image .preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.novo-anuncio form .upload-image.loaded .preview {
+    opacity: 1;
+}
+
 .novo-anuncio form .upload-image .icon {
+    
     font-size: 3em;
 }
 
