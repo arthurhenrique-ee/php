@@ -84,6 +84,7 @@
                         </div>
 
                         <img src="assets/img/anuncio-teste.jpg" alt="Preview de imagem" class="preview">
+                        <div class="overlay-preview"><i class="bi bi-arrow-repeat"></i></div>
                     </div>
 
                     <div class="ad-details">

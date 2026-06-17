@@ -31,16 +31,17 @@ section .top-section h3 {
 
 /* NOVO ANÚNCIO */
 .novo-anuncio form {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
 .novo-anuncio form .upload-image {
-    width: 100%;
-    height: 300px;
-    padding: 30px;
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border: 2px dashed #6E63FD;
     color: #3A3B3D;
@@ -48,23 +49,26 @@ section .top-section h3 {
 }
 
 .novo-anuncio form .upload-image.loaded {
-    position: relative;
     overflow: hidden;
     padding: 5px;
     cursor: pointer;
 }
 
-.novo-anuncio form .upload-image.loaded::after {
-    content: "";
+.novo-anuncio form .upload-image.loaded .overlay-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     inset: 0;
     z-index: 1;
     background-color: #3b368a;
+    color: #fff;
+    font-size: 3em;
     opacity: 0;
     transition: .3s;
 }
 
-.novo-anuncio form .upload-image.loaded:hover::after {
+.novo-anuncio form .upload-image.loaded .overlay-preview:hover {
     opacity: 0.5;
 }
 
@@ -76,10 +80,13 @@ section .top-section h3 {
 }
 
 .novo-anuncio form .upload-image .preview {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0;
+    pointer-events: none;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -89,7 +96,7 @@ section .top-section h3 {
 }
 
 .novo-anuncio form .upload-image .icon {
-    
+
     font-size: 3em;
 }
 
@@ -103,10 +110,6 @@ section .top-section h3 {
     border-radius: 5px;
     background-color: #6E63FD;
     color: #fff;
-}
-
-.novo-anuncio form .ad-details {
-    width: 100%;
 }
 
 .novo-anuncio form .ad-details .field {
