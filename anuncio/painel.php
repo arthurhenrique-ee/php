@@ -69,7 +69,7 @@
                 </div>
 
                 <form action="" method="post" class="form-novo-anuncio">
-                    <div class="upload-image loaded">
+                    <div class="upload-image">
                         <div class="placeholder">
                             <div class="icon">
                                 <i class="bi bi-upload"></i>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
 
-                        <img src="assets/img/anuncio-teste.jpg" alt="Preview de imagem" class="preview">
+                        <img src="" alt="Preview de imagem" class="preview">
                         <div class="overlay-preview"><i class="bi bi-arrow-repeat"></i></div>
                     </div>
 
@@ -97,7 +97,7 @@
                             <label for="ad-descricao">Descrição</label>
                         </div>
 
-                        <button type="submit">Publicar</button>
+                        <button type="submit" id="btn-public">Publicar</button>
                     </div>
 
                 </form>
@@ -107,7 +107,7 @@
     </main>
 
     <script src="assets/js/sidebar.js"></script>
-    <script src="assets/js/upload-image.js"></script>
+    <script src="assets/js/form-newad.js"></script>
 </body>
 
 </html>

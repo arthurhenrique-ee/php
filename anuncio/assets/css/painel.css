@@ -48,6 +48,10 @@ section .top-section h3 {
     text-align: center;
 }
 
+.novo-anuncio form .upload-image .overlay-preview {
+    display: none;
+}
+
 .novo-anuncio form .upload-image.loaded {
     overflow: hidden;
     padding: 5px;
@@ -154,4 +158,9 @@ section .top-section h3 {
     font-size: 16px;
     background-color: #70717567;
     color: #fff;
+    transition: .5s;
+}
+
+.novo-anuncio form button[type="submit"].active {
+    background-color: #6E63FD;
 }
