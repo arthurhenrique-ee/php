@@ -44,8 +44,10 @@ section .top-section h3 {
     justify-content: center;
     border-radius: 10px;
     border: 2px dashed #6E63FD;
-    color: #3A3B3D;
+    color: #6E63FD;
     text-align: center;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .novo-anuncio form .upload-image .overlay-preview {
@@ -78,8 +80,6 @@ section .top-section h3 {
 
 .novo-anuncio form .upload-image.loaded .placeholder {
     opacity: 0;
-    visibility: hidden;
-    position: absolute;
     pointer-events: none;
 }
 
@@ -100,20 +100,12 @@ section .top-section h3 {
 }
 
 .novo-anuncio form .upload-image .icon {
-
     font-size: 3em;
+    transition: .3s;
 }
 
-.novo-anuncio form .upload-image .text-info {
-    margin: 10px 0 30px 0;
-}
-
-.novo-anuncio form .upload-image label {
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #6E63FD;
-    color: #fff;
+.novo-anuncio form .upload-image:hover .icon {
+    font-size: 3.5em;
 }
 
 .novo-anuncio form .ad-details .field {
@@ -142,8 +134,8 @@ section .top-section h3 {
     font-size: 18px;
 }
 
-.novo-anuncio form .ad-details input:focus ~ label,
-.novo-anuncio form .ad-details input:valid ~ label {
+.novo-anuncio form .ad-details input:focus~label,
+.novo-anuncio form .ad-details input:valid~label {
     transform: translateY(-17px);
     font-size: 12px;
 }
@@ -163,4 +155,12 @@ section .top-section h3 {
 
 .novo-anuncio form button[type="submit"].active {
     background-color: #6E63FD;
+}
+
+@media screen and (max-width: 900px) {
+    .novo-anuncio form {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
 }

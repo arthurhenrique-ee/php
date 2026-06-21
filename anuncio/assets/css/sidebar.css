@@ -86,7 +86,7 @@ body.sidebar-active {
     border-bottom: 1px solid #484849;
 }
 
-.sidebar .sidebar-nav a.nav-link, 
+.sidebar .sidebar-nav a.nav-link,
 .sidebar .sidebar-footer .logout {
     display: flex;
     align-items: center;
@@ -181,16 +181,24 @@ body.sidebar-active {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     body {
-        grid-template-columns: 0 1fr;
+        display: block;
     }
 
     .sidebar {
-        padding: 0;
+        position: fixed;
+        left: -280px;
+        top: 0;
+        height: 100vh;
+        width: 280px;
+        transition: .3s;
+        z-index: 999;
+        transition: .5s;
     }
-    
+
     .sidebar.active {
-        padding: 20px;
+        left: 0;
     }
+
 }

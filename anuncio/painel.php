@@ -74,12 +74,8 @@
                             <div class="icon">
                                 <i class="bi bi-upload"></i>
                             </div>
-                            <div class="text-info">
-                                Selecione um arquivo ou solte-o aqui
-                            </div>
                             <div class="field">
                                 <input type="file" name="ad-image" id="ad-image" hidden>
-                                <label for="ad-image" class="btn-select-file">Selecione um arquivo</label>
                             </div>
                         </div>
 
