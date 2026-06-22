@@ -1,1 +1,64 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.slider .slider-container .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slider .slider-container .slide.active {
+    opacity: 1;
+}
+
+.slider .slider-container .slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: #00000067;
+}
+
+.slider .slider-container .slide img.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slider-container .slide .text-slide {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+}
+
+.slider .slider-container .slide .text-slide h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.slider .slider-container .slide .text-slide p {
+    font-size: 18px;
+}
