@@ -43,6 +43,8 @@ function validateForm() {
 
     if (imageFilled && titleFilled && descFilled) {
         submitBtn.classList.add('active')
+    } else {
+        submitBtn.classList.remove('active')
     }
 }
 
