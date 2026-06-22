@@ -36,7 +36,7 @@
     position: absolute;
     inset: 0;
     z-index: 1;
-    background-color: #00000067;
+    background-color: #0000007a;
 }
 
 .slider .slider-container .slide img.banner {
@@ -61,4 +61,30 @@
 
 .slider .slider-container .slide .text-slide p {
     font-size: 18px;
+}
+
+.slider .nav-arrow {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.slider .nav-arrow button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slider .nav-arrow button:hover {
+    background-color: #ffffff9f;
 }
