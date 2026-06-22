@@ -77,9 +77,9 @@
                         <div class="placeholder">
                             <div class="icon">
                                 <i class="bi bi-upload"></i>
-                            </div>
+                            </div>  
                             <div class="field">
-                                <input type="file" name="ad-image" id="ad-image" hidden>
+                                <input type="file" name="ad-image" id="ad-image" accept=".png, .jpg, .jpeg" hidden>
                             </div>
                         </div><!-- PLACEHOLDER -->
 
@@ -97,7 +97,7 @@
                             <label for="ad-descricao">Descrição</label>
                         </div><!-- DESCRIÇÃO -->
 
-                        <button type="submit" id="btn-public">Publicar</button><!-- BOTÃO PUBLICAR -->
+                        <button type="submit" id="btn-submit">Publicar</button><!-- BOTÃO PUBLICAR -->
                     </div><!-- DETALHES DO ANÚNCIO --> 
 
                 </form><!-- FORMULÁRIO NOVO ANÚNCIO -->
@@ -108,7 +108,7 @@
     </main>
 
     <script src="assets/js/sidebar.js"></script><!-- SCRIPT SIDEBAR -->
-    <script src="assets/js/form-newad.js"></script>
+    <script src="assets/js/upload-image.js"></script>
 </body>
 
 </html>
